@@ -36,4 +36,20 @@ I was working as a python backend developer for about four years. But I believe 
   - Software developer at SimbirSoft
 
 - July 2010 - November 2016
-  - Engineer at Ulyanovsk Manufactoring Design Burou
+  - Engineer at Ulyanovsk Instrument Manufacturing Design Bureau
+
+## Education
+
+_*September 2007 - June 2012*_
+
+Ulyanovsk State Technical University
+
+_Specialization_: Aviation Devices and Calculation Measuring Systems
+
+_Degree_: Specialist
+
+## Languages
+
+* Russian - native
+* English - C1 (Advanced)
+* French - A2 (Pre-Intermediate)
