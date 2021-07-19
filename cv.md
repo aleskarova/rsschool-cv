@@ -1,6 +1,6 @@
 # Dinara Aleskarova
 
-_*Software defeloper*_
+**Software defeloper**
 
 ## Contact Me
 
@@ -10,8 +10,8 @@ _*Software defeloper*_
 
 ## Follow Me
 
-* LinkedIn: https://www.linkedin.com/in/dinara-aleskarova-018498139/
-* Facebook: https://www.facebook.com/dinara.aleskarova
+* _LinkedIn_: https://www.linkedin.com/in/dinara-aleskarova-018498139/
+* _Facebook_: https://www.facebook.com/dinara.aleskarova
 
 ## Summary
 
