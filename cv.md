@@ -27,6 +27,23 @@ I was working as a python backend developer for about four years. But I believe 
 * HTML, CSS
 * JavaScript
 
+## Code Example
+
+```js
+const whosOnline = (friends) => {
+  const statuses = {};
+  for (const friend of friends) {
+    const friendStatus = (friend.status === 'online' && friend.lastActivity > 10) ? 'away' : friend.status;
+    if (!statuses[friendStatus]) {
+      statuses[friendStatus] = [friend.username];
+    } else {
+      statuses[friendStatus].push(friend.username);
+    }
+  }
+  return statuses;
+};
+```
+
 ## Work Experience
 
 - August 2019 - December 2020
@@ -40,9 +57,11 @@ I was working as a python backend developer for about four years. But I believe 
 
 ## Education
 
-_*September 2007 - June 2012*_
+**September 2007 - June 2012**
 
-Ulyanovsk State Technical University
+_University_: Ulyanovsk State Technical University
+
+_Location_: Ulyanovsk, Russia
 
 _Specialization_: Aviation Devices and Calculation Measuring Systems
 
