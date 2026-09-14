@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV of Dinara Aleskarova, a software developer with backend and frontend experience.">
+  <title>Dinara Aleskarova | Software Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="resume">
+    <header class="profile">
+      <img class="profile__photo" src="assets/profile-photo.jpg" alt="Dinara Aleskarova">
+      <div class="profile__intro">
+        <p class="profile__eyebrow">Curriculum Vitae</p>
+        <h1>Dinara Aleskarova</h1>
+        <p class="profile__role">Software Developer</p>
+      </div>
+      <p class="profile__statement">
+        Backend engineer with ten years of professional experience, expanding into
+        modern frontend development and building thoughtful, reliable software.
+      </p>
+    </header>
 
+    <div class="resume__body">
+      <aside class="sidebar" aria-label="Contact details and skills">
+        <section class="sidebar__section" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list__label">Email</span>
+              <a href="mailto:aleskarova@gmail.com">aleskarova@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-list__label">GitHub</span>
+              <a href="https://github.com/aleskarova">github.com/aleskarova</a>
+            </li>
+            <li>
+              <span class="contact-list__label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/dinara-aleskarova/">dinara-aleskarova</a>
+            </li>
+            <li>
+              <span class="contact-list__label">Facebook</span>
+              <a href="https://www.facebook.com/dinara.aleskarova">dinara.aleskarova</a>
+            </li>
+            <li>
+              <span class="contact-list__label">Discord</span>
+              <span>dinara2100</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sidebar__section" aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Technical Skills</h2>
+          <ul class="skills-list">
+            <li>Python 2.7 / 3.6+</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>AIOHTTP</li>
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>Docker</li>
+            <li>Ansible</li>
+            <li>TeamCity</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>OracleDB</li>
+            <li>Redis</li>
+            <li>MongoDB</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </section>
+
+        <section class="sidebar__section" aria-labelledby="languages-heading">
+          <h2 id="languages-heading">Languages</h2>
+          <dl class="language-list">
+            <div>
+              <dt>Russian</dt>
+              <dd>Native</dd>
+            </div>
+            <div>
+              <dt>English</dt>
+              <dd>C1 · Advanced</dd>
+            </div>
+          </dl>
+        </section>
+      </aside>
+
+      <div class="content">
+        <section class="content__section" aria-labelledby="summary-heading">
+          <h2 id="summary-heading">Professional Summary</h2>
+          <p>
+            I worked as a Python and Java/Kotlin backend developer for about ten
+            years. I believe that knowledge of several programming languages and
+            different technologies is essential for a modern software developer.
+            I am currently studying at RS School to strengthen my frontend skills.
+          </p>
+        </section>
+
+        <section class="content__section" aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Work Experience</h2>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <p class="timeline__date"><time datetime="2021-10">October 2021</time> — <time datetime="2026-08">August 2026</time></p>
+              <h3>Java/Kotlin Developer</h3>
+              <p class="timeline__company">Ecwid by Lightspeed</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date"><time datetime="2019-08">August 2019</time> — <time datetime="2020-12">December 2020</time></p>
+              <h3>Python Developer</h3>
+              <p class="timeline__company">Rostelecom IT</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date"><time datetime="2016-11">November 2016</time> — <time datetime="2019-08">August 2019</time></p>
+              <h3>Software Developer</h3>
+              <p class="timeline__company">SimbirSoft</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date"><time datetime="2010-07">July 2010</time> — <time datetime="2016-11">November 2016</time></p>
+              <h3>Engineer</h3>
+              <p class="timeline__company">Ulyanovsk Instrument Manufacturing Design Bureau</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="content__section" aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <article class="education">
+            <p class="education__date"><time datetime="2007-09">September 2007</time> — <time datetime="2012-06">June 2012</time></p>
+            <h3>Ulyanovsk State Technical University</h3>
+            <p>Aviation Devices and Calculation Measuring Systems</p>
+            <p class="education__meta">Specialist degree · Ulyanovsk, Russia</p>
+          </article>
+        </section>
+
+        <section class="content__section" aria-labelledby="code-heading">
+          <h2 id="code-heading">Code Example</h2>
+          <p class="code-caption">Grouping friends by their current online status</p>
+          <pre><code>const whosOnline = (friends) =&gt; {
+  const statuses = {};
+
+  for (const friend of friends) {
+    const isAway = friend.status === 'online'
+      &amp;&amp; friend.lastActivity &gt; 10;
+    const status = isAway ? 'away' : friend.status;
+
+    if (!statuses[status]) {
+      statuses[status] = [];
+    }
+
+    statuses[status].push(friend.username);
+  }
+
+  return statuses;
+};</code></pre>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a class="footer__github" href="https://github.com/aleskarova">GitHub</a>
+      <span class="footer__year">© 2026</span>
+      <a class="footer__course-link" href="https://rs.school/courses/javascript">
+        <img class="footer__course-logo" src="assets/rs-school-logo.svg" alt="RS School">
+      </a>
+    </footer>
+  </main>
 </body>
 </html>
