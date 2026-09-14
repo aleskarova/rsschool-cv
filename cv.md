@@ -4,7 +4,7 @@
 
 ## Contact Me
 
-
+* _discord_: dinara2100
 * _email_: aleskarova@gmail.com
 * _github_: https://github.com/aleskarova
 
