@@ -59,18 +59,28 @@ a:focus-visible {
   color: var(--paper);
 }
 
-.profile__monogram {
+.profile__photo-placeholder,
+.profile__photo {
   display: grid;
   width: 116px;
   height: 116px;
   place-items: center;
-  border: 2px solid var(--accent);
   border-radius: 50%;
+}
+
+.profile__photo-placeholder {
+  border: 2px dashed var(--accent);
   background: var(--navy-light);
   color: var(--accent);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.25rem;
-  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.profile__photo {
+  object-fit: cover;
+  border: 2px solid var(--accent);
 }
 
 .profile__eyebrow {
@@ -311,6 +321,52 @@ pre {
   tab-size: 2;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 88px;
+  padding: 18px 56px;
+  background: var(--navy);
+  color: #d5dee6;
+  font-size: 0.85rem;
+}
+
+.footer__github {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer__year {
+  color: var(--accent);
+}
+
+.footer__course-placeholder {
+  display: grid;
+  width: 112px;
+  height: 42px;
+  place-items: center;
+  border: 1px dashed rgba(255, 255, 255, 0.45);
+  border-radius: 3px;
+  color: #aebdca;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer__course-link,
+.footer__course-logo {
+  display: block;
+}
+
+.footer__course-logo {
+  width: 112px;
+  height: auto;
+}
+
 @media (max-width: 850px) {
   .profile {
     grid-template-columns: auto 1fr;
@@ -343,7 +399,8 @@ pre {
     text-align: center;
   }
 
-  .profile__monogram {
+  .profile__photo-placeholder,
+  .profile__photo {
     width: 100px;
     height: 100px;
     margin: 0 auto;
@@ -368,6 +425,11 @@ pre {
   .content {
     padding: 42px 30px 50px;
   }
+
+  .footer {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -391,6 +453,22 @@ pre {
     padding: 18px;
     font-size: 0.72rem;
   }
+
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 22px;
+  }
+
+  .footer__course-placeholder,
+  .footer__course-link {
+    flex-basis: 100%;
+  }
+
+  .footer__course-placeholder,
+  .footer__course-logo {
+    margin: 0 auto;
+  }
 }
 
 @media print {
@@ -406,13 +484,14 @@ pre {
     padding: 34px 42px;
   }
 
-  .resume__body {
-    grid-template-columns: 30% 70%;
-  }
-
   .sidebar,
   .content {
     padding: 36px;
+  }
+
+  .footer {
+    min-height: 64px;
+    padding: 12px 36px;
   }
 
   a {
