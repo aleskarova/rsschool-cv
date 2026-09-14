@@ -4,18 +4,18 @@
 
 ## Contact Me
 
-* _phone_: +79061427976
+
 * _email_: aleskarova@gmail.com
 * _github_: https://github.com/aleskarova
 
 ## Follow Me
 
-* _LinkedIn_: https://www.linkedin.com/in/dinara-aleskarova-018498139/
+* _LinkedIn_: https://www.linkedin.com/in/dinara-aleskarova/
 * _Facebook_: https://www.facebook.com/dinara.aleskarova
 
 ## Summary
 
-I was working as a python backend developer for about four years. But I believe that knowing several programming languages and different technologies is nesessary for a modern software developer. So now I am studing at RS-School in order to improve my frontend skills.
+I was working as a python and Java/Kotlin backend developer for about ten years. But I believe that knowing several programming languages and different technologies is nesessary for a modern software developer. So now I am studing at RS-School in order to improve my frontend skills.
 
 ## Technical Skills
 
@@ -45,6 +45,8 @@ const whosOnline = (friends) => {
 ```
 
 ## Work Experience
+- Octorber 2021 - August 2026
+  - Java/Kotlin develper at Ecwid by Lightspeed
 
 - August 2019 - December 2020
   - Python developer at Rostelecom IT
@@ -71,4 +73,3 @@ _Degree_: Specialist
 
 * Russian - native
 * English - C1 (Advanced)
-* French - A2 (Pre-Intermediate)
